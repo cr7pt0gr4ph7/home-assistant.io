@@ -1260,6 +1260,13 @@ multiple:
   type: boolean
   required: false
   default: false
+mode:
+  description: >
+    This can be either `dialog` (modal dialog) or `inline` (expandable section) mode,
+    and specifies how the editor for the object's fields should be presented.
+    If `fields` is not set, this setting will be ignored and a YAML editor will be displayed instead.
+  type: string
+  required: false
 {% endconfiguration %}
 
 ## QR code selector
